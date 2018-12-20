@@ -1,9 +1,14 @@
 package algorithms;
 
 public class QuickSort implements Sort {
+   
    @Override
    public <E extends Comparable<E>> void sort(E[] arr) {
-      quickSort(arr, 0, arr.length - 1);
+      if (arr == null) {
+         throw new IllegalArgumentException("null argument");
+      } else {
+         quickSort(arr, 0, arr.length - 1);
+      }
    }
 
    private static <E extends Comparable<E>> void quickSort(E[] arr, int low, int high) {
