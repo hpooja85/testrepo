@@ -18,5 +18,6 @@ public class Main {
       qs.sort(arr);
       System.out.print(Arrays.asList(arr));
       System.out.println("Created Changes");
+      System.out.println("Created new Changes");
    }
 }
